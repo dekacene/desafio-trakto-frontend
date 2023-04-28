@@ -1,0 +1,9 @@
+@import '../../user-area.component';
+
+@include wrapper;
+
+.hero {
+  img {
+    width: 100%;
+  }
+}

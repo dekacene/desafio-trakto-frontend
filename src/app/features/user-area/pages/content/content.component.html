@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="content">
+    <div class="content__header">
+      <h3>Material didático</h3>
+      <p class="mb-0">Acesse suas últimas apresentações de aula.</p>
+    </div>
+    <div class="classes">
+      <ng-container *ngIf="(classes$ | async) as classes; else loading">
+        <div class="classes__grid">
+          <tk-class-card
+            *ngFor="let class of classes"
+            [class]="class"
+            (clicked)="onClassClick(class)">
+          </tk-class-card>
+        </div>
+      </ng-container>
+      <ng-template #loading>
+        <div class="spinner-border mx-auto" role="status"></div>
+      </ng-template>
+    </div>
+  </div>
+</div>

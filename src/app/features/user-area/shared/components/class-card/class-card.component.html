@@ -1,0 +1,7 @@
+<div class="class-card">
+  <div class="class-card__thumb" (click)="onClick()">
+    <img [src]="class.cover.low" [alt]="'Capa de ' + class.title" loading=lazy />
+    <span class="slide-counter">{{ class.pages.length ?? 1 }} slides</span>
+  </div>
+  <p (click)="onClick()">{{ class.title }}</p>
+</div>

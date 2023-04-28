@@ -1,0 +1,10 @@
+<button #btn
+        (click)="onClick()"
+        (mouseenter)="onMouseEnter(btn)"
+        (mouseleave)="onMouseLeave(btn)"
+        [ngStyle]="getStyle()">
+
+  <img *ngIf="img" [src]="fullImgPath" [alt]="'Ícone de ' + text" />
+  <img *ngIf="img" class="hovered" [src]="fullImgHoverPath" [alt]="'Ícone de ' + text" />
+  {{ text }}
+</button>

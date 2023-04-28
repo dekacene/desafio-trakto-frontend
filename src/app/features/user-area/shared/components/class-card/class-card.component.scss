@@ -1,0 +1,48 @@
+.class-card {
+  max-width: 310px;
+
+  p {
+    cursor: pointer;
+    color: var(--tk-navyblue-neutral);
+    font-weight: 600;
+    font-size: var(--tk-fontsize-18);
+    line-height: 21px;
+    margin-top: 16px;
+    width: 310px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+
+    &:hover  {
+      color: var(--tk-navyblue-dark);
+    }
+  }
+
+  &__thumb {
+    position: relative;
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      cursor: pointer;
+      border-radius: 8px;
+      width: 310px;
+      height: 174px;
+      object-fit: cover;
+    }
+
+  }
+}
+
+.slide-counter {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background-color: var(--tk-grey-lighter);
+  color: var(--tk-white-neutral);
+  border-radius: 500px;
+  padding: 4px 8px;
+}

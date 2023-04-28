@@ -1,0 +1,9 @@
+<a class="category" routerLink="/u/dashboard">
+  <div class="category__title">
+    <h3>{{ category.title }}</h3>
+    <span [ngStyle]="{ backgroundColor: color }"></span>
+  </div>
+  <div class="category__icon" [ngStyle]="{ backgroundColor: color }">
+    <img [src]="category.icon" [alt]="'Ícone de ' + category.title" />
+  </div>
+</a>

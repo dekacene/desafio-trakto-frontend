@@ -1,0 +1,30 @@
+<div class="login">
+  <a href="https://www.trakto.io/" title="Logo da Trakto">
+    <img src="assets/logos/logo-trakto.png" alt="Logo da Trakto" />
+  </a>
+
+  <h1>Olá, faça login em sua conta.</h1>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+    <div class="form__field">
+      <label for="email">E-mail</label>
+      <input formControlName="email"
+             id="email"
+             type="email"
+             placeholder="email@dominio.com" />
+    </div>
+
+    <div class="form__field">
+      <label for="password">Senha</label>
+      <input formControlName="password"
+             id="password"
+             type="password"
+             placeholder="••••••••" />
+    </div>
+
+    <button [disabled]="!loginForm.valid">
+      <div *ngIf="isLoading" class="spinner-border" role="status"></div>
+      {{ isLoading ? 'Entrando...' : 'Entrar' }}
+    </button>
+  </form>
+</div>

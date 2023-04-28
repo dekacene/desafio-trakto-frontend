@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <div class="hero">
+    <img src="assets/heroes/hero-dashboard.png" alt="Hero do dashboard" loading=lazy />
+  </div>
+  <tk-content-card
+    [classes$]="documents$"
+    title="Material didático"
+    subtitle="Acesse suas últimas apresentações de aula."
+  >
+    <tk-icon-button
+      button
+      color="--tk-purple-neutral"
+      text="Ver todo conteúdo"
+      (clicked)="goToAllContent()">
+    </tk-icon-button>
+    <ng-container cards>
+      <tk-class-card
+        *ngFor="let class of (documents$ | async)"
+        [class]="class"
+        (clicked)="onCardClicked($event)">
+      </tk-class-card>
+    </ng-container>
+  </tk-content-card>
+  <tk-content-card
+    [videos$]="youtubeDocuments$"
+    title="Vídeo aulas"
+    subtitle="Complemente os estudos assistindo o conteúdo de forma dinâmica."
+  >
+    <tk-icon-button
+      button
+      color="--tk-red-neutral"
+      text="Abrir no Youtube"
+      img="icon-youtube-rounded.svg"
+      imgHover="icon-youtube-rounded-hover.svg">
+    </tk-icon-button>
+    <ng-container *ngIf="(youtubeDocuments$ | async) as videos" cards>
+      <tk-youtube-card
+        *ngFor="let video of videos"
+        [video]="video">
+      </tk-youtube-card>
+    </ng-container>
+  </tk-content-card>
+</div>

@@ -1,0 +1,13 @@
+@import '../../app.component';
+
+.categories {
+  align-items: center;
+  background-color: var(--tk-grey-dark);
+  background-image: url("../../../assets/backgrounds/bg-black.svg");
+  background-size: cover;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  gap: 72px;
+  height: calc(100% - #{$navbar-height});
+  place-content: center;
+}

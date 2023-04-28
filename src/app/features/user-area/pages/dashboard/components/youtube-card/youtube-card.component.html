@@ -1,0 +1,12 @@
+<div class="yt-card">
+  <div class="yt-card__header">
+    <div class="mt-1">
+      <img src="assets/mocks/mock-thumb-channel.png" alt="Capa protótipo de canal do Youtube" height="24" />
+      <p class="ms-2 mb-0">{{ video.title }}</p>
+    </div>
+    <img class="mt-2" [src]="imgsPath + '/icon-menu-dots.svg'" alt="Ícone do menu de três pontos" height="16" />
+  </div>
+  <img class="yt-card__thumb" [src]="video.thumbImg" [alt]="'Capa de vídeo ' + video.title" />
+  <img class="yt-card__watch" [src]="imgsPath + '/icon-watch-on-youtube.svg'" alt="Ícone de Watch on Youtube" />
+  <img class="yt-card__icon" [src]="imgsPath + '/icon-youtube.png'" alt="Ícone do logo do Youtube" />
+</div>

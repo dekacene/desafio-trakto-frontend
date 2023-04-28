@@ -1,0 +1,30 @@
+@import '../../user-area.component';
+
+@include wrapper;
+
+.content {
+  @extend .content-card;
+
+  padding: 56px 42px 56px 72px;
+
+  &__header {
+    @include header;
+
+    margin-bottom: 28px;
+  }
+}
+
+.classes {
+  display: flex;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-content: center;
+    gap: 32px;
+    width: 100%;
+  }
+}
+
+
+

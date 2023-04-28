@@ -1,0 +1,13 @@
+button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-weight: var(--tk-fontweight-bold);
+  font-size: var(--tk-fontsize-16);
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}

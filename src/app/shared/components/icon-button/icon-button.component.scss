@@ -1,0 +1,25 @@
+$hoverClassName: 'hovered';
+
+@mixin img-hovering($className, $hover, $not-hover) {
+  img {
+    &.#{$className} {
+      display: $hover;
+    }
+
+    &:not(.#{$className}) {
+      display: $not-hover;
+    }
+  }
+}
+
+button {
+  @include img-hovering($hoverClassName, none, inline);
+
+  &:hover {
+    @include img-hovering($hoverClassName, inline, none);
+  }
+
+  img {
+    margin-right: 8px;
+  }
+}

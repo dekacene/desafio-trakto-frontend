@@ -1,0 +1,25 @@
+<div class="nav">
+  <section class="nav__logo">
+    <a href="https://www.trakto.io/educacao/" target="_blank">
+      <img src="assets/logos/logo-trakto-edu-dark.png" alt="Ícone da Trakto Edu" />
+      <img class="dark-theme" src="assets/logos/logo-trakto-edu.png" alt="Ícone da Trakto Edu" />
+    </a>
+    <ng-content></ng-content>
+  </section>
+  <section class="menu">
+    <div class="menu__item">
+      <img [src]="iconsPath + '/icon-calendar-dark.svg'" alt="Ícone de calendário" />
+      <img class="dark-theme" [src]="iconsPath + '/icon-calendar.svg'" alt="Ícone de calendário" />
+      <p class="mb-0 ms-2">{{ currentDate }}</p>
+    </div>
+    <div class="menu__item">
+      <img class="clickable" [src]="iconsPath + '/icon-notification-dark.svg'" alt="Ícone de notificação" />
+      <img class="dark-theme clickable" [src]="iconsPath + '/icon-notification.svg'" alt="Ícone de notificação" />
+    </div>
+    <div class="menu__item clickable">
+      <img class="me-2 d-inline" [src]="iconsPath + '/icon-avatar.svg'" alt="Ícone com foto de perfil" />
+      <img [src]="iconsPath + '/icon-chevron-dark.svg'" alt="Ícone de seta clicável" />
+      <img class="dark-theme" [src]="iconsPath + '/icon-chevron.svg'" alt="Ícone de seta clicável" />
+    </div>
+  </section>
+</div>
