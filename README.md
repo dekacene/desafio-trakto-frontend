@@ -2,7 +2,9 @@
 
 > Repositório do projeto Angular feito para o desafio da Trakto, referente a vaga de [Engenheiro de Software Front-end](https://trakto.gupy.io/job/eyJzb3VyY2UiOiJndXB5X3B1YmxpY19wYWdlIiwiam9iSWQiOjQ2MjgwMDl9?jobBoardSource=gupy_public_page).
 
-O desafio em questão era fazer o front-end do seguinte protótipo de uma aplicação web fictícia [PrototipoTraktoTV](https://www.figma.com/file/Ajzapgkl4vrXw8KnHlIwPh/PrototipoTraktoTV?node-id=18-268&t=RXk6nX07OS4AVwDH-0).
+🖼️ O desafio em questão era fazer o front-end do seguinte protótipo de uma aplicação web fictícia [PrototipoTraktoTV](https://www.figma.com/file/Ajzapgkl4vrXw8KnHlIwPh/PrototipoTraktoTV?node-id=18-268&t=RXk6nX07OS4AVwDH-0).
+
+:octocat: A documentação do desafio pode ser encontrado [neste](https://github.com/trakto/desafio_frontend) repositório da Trakto.
 
 ### Bibliotecas Utilizadas
 
